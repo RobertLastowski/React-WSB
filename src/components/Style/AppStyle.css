@@ -1,0 +1,108 @@
+button{
+    border-radius: 25px;
+    width: 100px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 25px;
+    padding: 5px;
+    color: rgb(167, 167, 167);
+    display: flex;
+    margin: 4px;
+    border: solid white;
+  }
+
+  .App {
+    text-align: center;
+  }
+  .main-box {
+    background-color: rgb(8, 5, 5);
+    min-height: 103vh;
+  }
+  
+  .small-box{
+    background-color: rgb(41, 41, 41);
+    border-radius: 25px;
+    padding: 15px;
+    color: rgb(167, 167, 167);
+  }
+  
+  p{
+    font-size: smaller;
+  }
+  
+  
+
+   /* :root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+    --body-font-size: 16px;
+    --body-font-family: 'Open Sans', sans-serif;
+  } */
+  
+  /* styles using the CSS variables
+  .main-box {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    font-size: var(--body-font-size);
+    font-family: var(--body-font-family);
+  }
+  .small-box {
+    border: 1px solid var(--dark-color);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .btn-primary {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+  }
+  
+  .btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+  }
+  
+  .btn-success {
+    background-color: var(--success-color);
+    color: var(--light-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+  }
+  
+  .btn-danger {
+    background-color: var(--danger-color);
+    color: var(--light-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+  }
+  
+  .btn-warning {
+    background-color: var(--warning-color);
+    color: var(--dark-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+  }
+  
+  .btn-info {
+    background-color: var(--info-color);
+    color: var(--light-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+  }
+   */

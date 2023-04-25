@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import HelloWorld from './components/HelloWorld';
+import Name from './components/Name';
+import BirthDate from './components/BirthDate';
+import Counter from './components/Counter';
+import MenuComponent from './components/MenuComponent';
+import GridComponent from './components/GridComponent';
+import { BrowserRouter as Router, Route, Routes , Navigate, } from 'react-router-dom';
+import AboutPage from './components/AboutPage';
+import DashboardPage from './components/DashboardPage';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className = "main-box">
+    <div className="columns is-desktop is-flex">
+          <div className="column is-2 is-flex" >
+          <MenuComponent/>
+          </div>
+
+          <div className="column is-9 is-flex">
+          <Router>
+          <Routes>
+            <Route exact path = "/" element = {<GridComponent/>}/>
+            <Route exact path = "/about" element = {<AboutPage/>}/>
+            <Route exact path = "/dashboard" element = {<DashboardPage/>}/>
+            <Route path="/home" element={<Navigate to="/" replace />} />
+          </Routes>
+          </Router>
+          </div>
+        </div>
     </div>
   );
 }
