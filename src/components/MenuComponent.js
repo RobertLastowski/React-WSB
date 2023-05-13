@@ -2,12 +2,7 @@ import React from 'react';
 import "bulma/css/bulma.css"
 import "./Style/AppStyle.css"
 import FontChange from './FontChange';
-import ThemeSwitcher from './ThemeSwitcher';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-
-
-
-
 
 
 
@@ -54,7 +49,6 @@ function MenuComponent(){
       </p>
       <ul>
         <li><FontChange/></li>
-        <li><ThemeSwitcher/></li>
       </ul>
 </aside>
     );

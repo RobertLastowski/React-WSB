@@ -1,7 +1,4 @@
-import HelloWorld from './components/HelloWorld';
-import Name from './components/Name';
-import BirthDate from './components/BirthDate';
-import Counter from './components/Counter';
+
 import MenuComponent from './components/MenuComponent';
 import GridComponent from './components/GridComponent';
 import { BrowserRouter as Router, Route, Routes , Navigate, } from 'react-router-dom';
@@ -16,13 +13,12 @@ function App() {
           <div className="column is-2 is-flex" >
           <MenuComponent/>
           </div>
-
           <div className="column is-9 is-flex">
           <Router>
           <Routes>
-            <Route exact path = "/" element = {<GridComponent/>}/>
-            <Route exact path = "/about" element = {<AboutPage/>}/>
-            <Route exact path = "/dashboard" element = {<DashboardPage/>}/>
+            <Route exact path = "/" element = {<GridComponent />}/>
+            <Route exact path = "/about" element = {<AboutPage />}/>
+            <Route exact path = "/dashboard" element = {<DashboardPage />}/>
             <Route path="/home" element={<Navigate to="/" replace />} />
           </Routes>
           </Router>
